@@ -65,7 +65,7 @@ document.getElementById('contactForm').addEventListener('submit', async (e) => {
   };
 
   try {
-    const res = await fetch('http://localhost:5000/send', {
+    const res = await fetch('https://nodemailer-uc10.onrender.com/send', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(formData),
